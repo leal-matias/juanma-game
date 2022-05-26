@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/juanma-game/static/css/main.60698f6b.css",
+    "main.js": "/juanma-game/static/js/main.da6d2090.js",
+    "index.html": "/juanma-game/index.html",
+    "main.60698f6b.css.map": "/juanma-game/static/css/main.60698f6b.css.map",
+    "main.da6d2090.js.map": "/juanma-game/static/js/main.da6d2090.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60698f6b.css",
+    "static/js/main.da6d2090.js"
+  ]
+}
