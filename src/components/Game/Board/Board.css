@@ -1,0 +1,38 @@
+.board-container {
+    font-weight: bold;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 12px 0px; 
+    grid-template-areas: 
+      "input board-value"
+      "add board-value";
+    margin-left: 30%;
+    margin-top:80px;
+  }
+  .board-value {
+      display: grid;
+      justify-content: left;
+      align-content: center;
+      grid-area: board-value;
+      font-size: 50px;
+    }
+  .board-input {
+      grid-area: input;
+      text-align: center;
+      max-width: 176px;
+      max-height: 56px;
+    }   
+  .board-add { 
+      grid-area: add;
+      cursor: pointer; 
+    }
+  .board-box {
+      font-size: 20px;
+      font-weight: bold; 
+      height: 60px; 
+      width: 180px;
+      
+      border-radius: 10px;
+      background-color: #FFF;
+    }
