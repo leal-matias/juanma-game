@@ -7,10 +7,10 @@ import randomElement from "../../helpers/utils";
 const operators = ["+", "%", "-", "x"];
 
 const calculatorOperations = {
-  x: (prevValue, nextValue) => prevValue * nextValue,
+  x: (prevValue, nextValue) => Number(prevValue) * Number(nextValue),
   "%": (prevValue, nextValue) => prevValue / nextValue,
-  "+": (prevValue, nextValue) => prevValue + nextValue,
-  "-": (prevValue, nextValue) => prevValue - nextValue,
+  "+": (prevValue, nextValue) => Number(prevValue) + Number(nextValue),
+  "-": (prevValue, nextValue) => Number(prevValue) - Number(nextValue),
 };
 
 const gameOverStyle = {
