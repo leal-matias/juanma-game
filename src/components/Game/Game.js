@@ -8,7 +8,7 @@ const operators = ["+", "%", "-", "x"];
 
 const calculatorOperations = {
   x: (prevValue, nextValue) => Number(prevValue) * Number(nextValue),
-  "%": (prevValue, nextValue) => prevValue / nextValue,
+  "%": (prevValue, nextValue) => Number(prevValue) / Number(nextValue),
   "+": (prevValue, nextValue) => Number(prevValue) + Number(nextValue),
   "-": (prevValue, nextValue) => Number(prevValue) - Number(nextValue),
 };
@@ -34,7 +34,6 @@ export default function Game() {
   const applyCard = ({ key, operator, number }) => {
     setBoardValue(calculatorOperations[operator](boardValue, number));
     if (operator === "%" && number === 0) setActiveGame(false);
-    destroyCard(key);
   };
 
   const destroyCard = (key) => {
